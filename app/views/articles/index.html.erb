@@ -1,9 +1,11 @@
 <h1>Articles</h1>
 
 <ul>
-    <% @articles.each do |article| %>
+  <% @articles.each do |article| %> <!-- avalia o seguinte codigo ruby anexo -->
     <li>
-        <%= article.title%>
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %> <!-- avalia o seguinte codigo ruby enclosed e de output no valor q ele retorna-->
+      </a>
     </li>
-    <% end %>
+  <% end %>
 </ul>
