@@ -3,8 +3,9 @@
 <ul>
   <% @articles.each do |article| %> <!-- avalia o seguinte codigo ruby anexo -->
     <li>
-      <a href="/articles/<%= article.id %>">
-        <%= article.title %> <!-- avalia o seguinte codigo ruby enclosed e de output no valor q ele retorna-->
+     
+        <%= link_to article.title, article %> <!-- avalia o seguinte codigo ruby enclosed e de output no valor q ele retorna-->
+        <!-- link_to renderiza um link para o local que o segundo argumento aponta, usando o primeiro como texto -->
       </a>
     </li>
   <% end %>
