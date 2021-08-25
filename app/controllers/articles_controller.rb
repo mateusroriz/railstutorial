@@ -45,7 +45,7 @@ class ArticlesController < ApplicationController
   
   private 
     def article_params #utilizando isso para permitir o envio dos parametros por hash
-     params.require(:article).permit(:title, :body)
+     params.require(:article).permit(:title, :body, :status)
    end
 
 end
